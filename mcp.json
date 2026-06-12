@@ -1,0 +1,11 @@
+{
+  "servers": {
+    "test-weather-server": {
+      "command": "node",
+      "args": ["weather-server.js"],
+      "env": {
+        "API_KEY": "test-key"
+      }
+    }
+  }
+}

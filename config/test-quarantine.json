@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "file": "tests/integration/agentProgress.test.ts",
+      "reason": "Legacy Paths mock does not implement the current session log path contract.",
+      "owner": "core-maintainers",
+      "expiresOn": "2026-08-31"
+    },
+    {
+      "file": "tests/integration/commands.test.ts",
+      "reason": "Legacy command integration assertions no longer match the registered command surface.",
+      "owner": "core-maintainers",
+      "expiresOn": "2026-08-31"
+    },
+    {
+      "file": "tests/integration/design.test.ts",
+      "reason": "Legacy generated-document length assertion depends on unstable model fixture output.",
+      "owner": "spec-maintainers",
+      "expiresOn": "2026-08-31"
+    },
+    {
+      "file": "tests/integration/mcp-command.test.ts",
+      "reason": "Legacy application fixture initializes spec services before registering the model service.",
+      "owner": "integration-maintainers",
+      "expiresOn": "2026-08-31"
+    },
+    {
+      "file": "tests/integration/output-styles.test.ts",
+      "reason": "Legacy ModelService fixture does not register the required EventBus dependency.",
+      "owner": "integration-maintainers",
+      "expiresOn": "2026-08-31"
+    },
+    {
+      "file": "tests/integration/plan.test.ts",
+      "reason": "Legacy plan fixtures and task identifiers no longer match the current plan schema.",
+      "owner": "spec-maintainers",
+      "expiresOn": "2026-08-31"
+    },
+    {
+      "file": "tests/integration/resume.test.ts",
+      "reason": "Legacy resume fixture writes sessions using an obsolete storage layout.",
+      "owner": "session-maintainers",
+      "expiresOn": "2026-08-31"
+    },
+    {
+      "file": "tests/integration/review.test.ts",
+      "reason": "Legacy review fixtures expect analyzer findings that current rules no longer emit.",
+      "owner": "review-maintainers",
+      "expiresOn": "2026-08-31"
+    },
+    {
+      "file": "tests/integration/skills.test.ts",
+      "reason": "Legacy skill fixtures use the pre-plugin discovery directory structure.",
+      "owner": "plugin-maintainers",
+      "expiresOn": "2026-08-31"
+    },
+    {
+      "file": "tests/integration/status.test.ts",
+      "reason": "Legacy ConfigService construction omits the now-required productName option.",
+      "owner": "integration-maintainers",
+      "expiresOn": "2026-08-31"
+    },
+    {
+      "file": "tests/integration/workspace.test.ts",
+      "reason": "Legacy worktree tests use shared repository paths and leak state between runs.",
+      "owner": "git-maintainers",
+      "expiresOn": "2026-08-31"
+    },
+    {
+      "file": "tests/unit/application/Application.test.ts",
+      "reason": "Legacy application fixture bypasses the current model and spec service registration order.",
+      "owner": "core-maintainers",
+      "expiresOn": "2026-08-31"
+    },
+    {
+      "file": "tests/unit/commands/ResumeCommand.test.ts",
+      "reason": "Legacy command container mock returns a session service where EventBus is expected.",
+      "owner": "session-maintainers",
+      "expiresOn": "2026-08-31"
+    },
+    {
+      "file": "tests/unit/services/ConfigService.test.ts",
+      "reason": "Legacy tests write test-config.json instead of the current scoped config paths.",
+      "owner": "config-maintainers",
+      "expiresOn": "2026-08-31"
+    },
+    {
+      "file": "tests/unit/spec/AIAnalyzer.test.ts",
+      "reason": "Legacy AI analyzer mocks return a response shape that no longer matches the parser contract.",
+      "owner": "spec-maintainers",
+      "expiresOn": "2026-08-31"
+    },
+    {
+      "file": "tests/unit/spec/SpecWritePlanCommand.test.ts",
+      "reason": "Legacy console-output assertions no longer match the structured command reporter.",
+      "owner": "spec-maintainers",
+      "expiresOn": "2026-08-31"
+    },
+    {
+      "file": "tests/unit/styles/OutputStyleManager.test.ts",
+      "reason": "Legacy CommonJS dynamic import resolves the markdown helper from an obsolete path.",
+      "owner": "ui-maintainers",
+      "expiresOn": "2026-08-31"
+    },
+    {
+      "file": "tests/unit/utils/firstRun.test.ts",
+      "reason": "Legacy filesystem mocks do not isolate provider discovery from the developer environment.",
+      "owner": "config-maintainers",
+      "expiresOn": "2026-08-31"
+    }
+  ]
+}
