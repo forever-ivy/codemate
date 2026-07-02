@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AICLI - AI-Powered CLI Assistant</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div id="app">
+    <!-- 侧边栏 -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h1>AICLI</h1>
+        <button id="new-session-btn" class="btn-primary">新建会话</button>
+      </div>
+      
+      <div class="session-list" id="session-list">
+        <!-- 会话列表将在这里动态生成 -->
+      </div>
+    </aside>
+    
+    <!-- 主内容区 -->
+    <main class="main-content">
+      <!-- 消息列表 -->
+      <div class="message-list" id="message-list">
+        <div class="welcome-message">
+          <h2>👋 欢迎使用 AICLI</h2>
+          <p>我是你的 AI 编程助手，可以帮你：</p>
+          <ul>
+            <li>📝 编写和修改代码</li>
+            <li>🔍 搜索和分析代码</li>
+            <li>🐛 调试和修复 Bug</li>
+            <li>📚 生成文档</li>
+            <li>🧪 编写测试</li>
+          </ul>
+          <p>开始对话吧！</p>
+        </div>
+      </div>
+      
+      <!-- 输入区 -->
+      <div class="input-area">
+        <textarea 
+          id="message-input" 
+          placeholder="输入消息... (Shift+Enter 换行，Enter 发送)"
+          rows="3"
+        ></textarea>
+        <button id="send-btn" class="btn-send">发送</button>
+      </div>
+    </main>
+  </div>
+  
+  <script src="/app.js"></script>
+</body>
+</html>
