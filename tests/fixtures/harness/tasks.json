@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "tasks": [
+    {
+      "id": "fix-addition",
+      "title": "Fix the addition implementation",
+      "description": "Repair an existing behavior while preserving the public API.",
+      "category": "bugfix",
+      "tags": ["javascript", "unit-test"],
+      "fixture": "./basic-js-repo",
+      "userMessage": "Fix the add function so the existing test passes. Keep the exported function name unchanged and run npm test.",
+      "verificationCommands": ["npm test"],
+      "expected": {
+        "changedFiles": ["src/math.js"],
+        "verificationSuccess": true,
+        "responseIncludes": ["npm test"]
+      }
+    },
+    {
+      "id": "add-multiply",
+      "title": "Add multiplication support",
+      "description": "Implement a small feature and extend the repository test coverage.",
+      "category": "feature",
+      "tags": ["javascript", "unit-test", "multi-file"],
+      "fixture": "./basic-js-repo",
+      "userMessage": "Add and export a multiply(a, b) function in src/math.js, add tests for it, and run npm test.",
+      "verificationCommands": ["npm test"],
+      "expected": {
+        "changedFiles": ["src/math.js", "test/math.test.js"],
+        "verificationSuccess": true,
+        "responseIncludes": ["npm test"]
+      }
+    }
+  ]
+}
